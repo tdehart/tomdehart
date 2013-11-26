@@ -15,35 +15,40 @@
 </head>
 
 <body>
-  <div class="container">
-      <div class="sixteen columns">
-        <div class="top">
-          <header class="page-header">
-            <a href="/">
-              <span class="header-prefix">tom</span><span class="header-suffix">dehart</span>
-            </a>
-          </header>
-          <nav class="navbar">
-            <ul class="nav-list">
+  <div class="container content-body">
+    <div class="sixteen columns">
+      <div class="top">
+        <header class="page-header">
+          <a href="/">
+            <span class="header-prefix">tom</span><span class="header-suffix">dehart</span>
+          </a>
+        </header>
+        <nav class="navbar">
+          <ul class="nav-list">
 
-              {% for link in site.navigation %}
-                {% assign url = page.url|remove:'index.html' %}
-                {% assign current = nil %}
-                {% if url == link.url or page.categories[0] == link.text or link.text == page.title %}
-                  {% assign current = 'current' %}
-                {% endif %}
+            {% for link in site.navigation %}
+              {% assign url = page.url|remove:'index.html' %}
+              {% assign current = nil %}
+              {% if url == link.url or page.categories[0] == link.text or link.text == page.title %}
+                {% assign current = 'current' %}
+              {% endif %}
 
-                <li>
-                  <a class="{{ current }}" href="{{ link.url }}">{{ link.text }}</a>
-                </li>
-              {% endfor %}
-            </ul>
-          </nav>
-        </div>
+              <li>
+                <a class="{{ current }}" href="{{ link.url }}">{{ link.text }}</a>
+              </li>
+            {% endfor %}
+          </ul>
+        </nav>
+      </div>
       <hr />
     </div>
-    
     {{ content }}
   </div>
+  <div class="footer text-muted"><a href="/"><i class="fa fa-home fa-lg"></i></a> Tom DeHart • <a href="https://twitter.com/itstomedyall" target="_blank">Twitter</a> • <a href="https://github.com/tdehart" target="_blank">GitHub</a>
 </body>
 </html>
+
+
+
+
+

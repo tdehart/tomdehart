@@ -4,7 +4,7 @@ title:  "HipHopAdvocate"
 date:   2013-11-27 08:20:25
 categories: projects
 icon: fa-headphones
-excerpt: A music discovery tool tailored to the hip hop community.
+excerpt: A music discovery tool tailored to the hip hop community
 ---
 <p align="center"> 
   <img alt="eSports" src="/images/rapadvocate.png" class="project-img"/> 
