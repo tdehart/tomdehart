@@ -1,0 +1,49 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>{{ page.title }}</title>
+  <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300" rel="stylesheet" type="text/css">
+  <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+  <link rel="stylesheet" href="/stylesheets/base.css">
+  <link rel="stylesheet" href="/stylesheets/skeleton.css">
+  <link rel="stylesheet" href="/stylesheets/layout.css">
+  <link rel="stylesheet" href="/stylesheets/main.css">
+  <!-- <script src="js/modernizr.js"></script> -->
+</head>
+
+<body>
+  <div class="container">
+      <div class="sixteen columns">
+        <div class="top">
+          <header class="page-header">
+            <a href="/">
+              <span class="header-prefix">tom</span><span class="header-suffix">dehart</span>
+            </a>
+          </header>
+          <nav class="navbar">
+            <ul class="nav-list">
+
+              {% for link in site.navigation %}
+                {% assign url = page.url|remove:'index.html' %}
+                {% assign current = nil %}
+                {% if url == link.url or page.categories[0] == link.text or link.text == page.title %}
+                  {% assign current = 'current' %}
+                {% endif %}
+
+                <li>
+                  <a class="{{ current }}" href="{{ link.url }}">{{ link.text }}</a>
+                </li>
+              {% endfor %}
+            </ul>
+          </nav>
+        </div>
+      <hr />
+    </div>
+    
+    {{ content }}
+  </div>
+</body>
+</html>

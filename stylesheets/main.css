@@ -1,0 +1,180 @@
+html: {
+  color: #000;
+}
+
+body {
+  line-height: 1.8;
+  color: #2a2a2a;
+  font-family: "Open Sans",sans-serif;
+  font-weight: 300;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Open Sans",sans-serif;
+  font-weight: 400;
+  color: #3a3a3a;
+  line-height: 1.2em;
+  margin-bottom: 0.3em;
+}
+
+a {
+  text-decoration: none;
+  -webkit-transition: color 0.15s cubic-bezier(0.455,  0.03,  0.515,  0.955);
+  -moz-transition: color 0.15s cubic-bezier(0.455,  0.03,  0.515,  0.955);
+  -ms-transition: color 0.15s cubic-bezier(0.455,  0.03,  0.515,  0.955);
+  -o-transition: color 0.15s cubic-bezier(0.455,  0.03,  0.515,  0.955);
+  transition: color 0.15s cubic-bezier(0.455,  0.03,  0.515,  0.955);
+}
+
+a:hover {
+  color: #FF4B32;
+}
+
+a.current {
+  color: #FF4B32;
+}
+
+.text-muted {
+  color: #999;
+}
+
+.centered {
+  text-align: center;
+}
+
+.top {
+  margin-top: 40px;
+  text-align: center;
+}
+
+hr {
+  margin-bottom: 0;
+}
+
+header.page-header {
+  line-height: 40px;
+  font-size: 36px;
+  margin-bottom: 30px;
+  font-weight: 900;
+}
+
+.header-suffix {
+  color: #FF4B32;
+}
+
+.nav-list li {
+  display: inline-block;
+  margin-left: 20px;
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.nav-list li:first-child {
+  margin-left: 0;
+}
+
+::selection {
+  background: #FFC296;
+}
+
+.blog-item {
+  border-bottom: 1px solid #e0e0e0;
+  margin-bottom: 0;
+  width: 100%;
+}
+
+.blog-item p {
+  line-height: 1.8;
+  margin: 0;
+  font-size: 18px;
+}
+
+a.blog-item-link {
+  display: block;
+  -webkit-transition: all 0.2s ease-out;
+  -moz-transition: all 0.2s ease-out;
+  -o-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+  padding: 32px 8px;
+}
+
+a.blog-item-link:hover {
+  background: #F4F4F4;
+  color: #333;
+}
+
+.blog-post a, .about-body a {
+  color: #FF4B32;
+}
+
+.blog-post a:hover, .about-body a:hover {
+  color: #2a2a2a;
+}
+
+header.blog-post-header {
+  margin-top: 20px;
+}
+
+.blog-post-header h1 {
+  font-size: 92px;
+  margin-bottom: 0;
+}
+
+.blog-post-date {
+  font-size: 18px;
+  margin: 0px 0 30px 0;
+}
+
+.blog-post-body {
+  font-size: 24px;
+}
+
+.about-header {
+  margin-top: 10px;
+  font-size: 80px;
+}
+
+.about-body {
+  font-size: 24px;
+}
+
+.caption {
+  display: block;
+  font-size: 18px;
+  text-align: center;
+}
+
+.project-img {
+  width: 90%;
+  margin-top: 30px;
+}
+
+.project-icon {
+  display: block;
+  float: left;
+  font-size: 90px;
+  margin-right: 20px;
+}
+
+ @media only screen and (max-width: 959px) {
+  .blog-item h2, .about-header {
+    font-size: 32px;
+  }
+
+  .blog-item p, .about-body {
+    font-size: 16px;
+  }
+  
+  h1.blog-post-title {
+      font-size: 32px;
+  }
+
+  .blog-post-date {
+    font-size: 14px;
+  }
+
+  .blog-post-body {
+    font-size: 16px;
+  }
+}
+

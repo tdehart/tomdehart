@@ -1,0 +1,18 @@
+---
+layout: default
+title: projects
+---
+<div class="sixteen columns">
+  <ul class="posts">
+  {% for post in site.categories.projects %}
+    <li class="blog-item">
+      <a href="{{ post.url }}" class="blog-item-link">
+        <i class="fa {{post.icon}} project-icon"></i>
+        <h2>{{ post.title }}</h2>
+        <p>{{ post.excerpt }}</p>
+      </a>
+    </li>
+  {% endfor %}
+  </ul>
+</div>
+

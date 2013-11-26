@@ -1,0 +1,17 @@
+---
+layout: default
+title: blog
+---
+<div class="sixteen columns">
+  <ul class="posts">
+  {% for post in site.categories.blog %}
+    <li class="blog-item">
+      <a href="{{ post.url }}" class="blog-item-link">
+        <h2>{{ post.title }}</h2>
+        <p>{{ post.excerpt }}</p>
+        <p class="text-muted">Published {{ post.date | date: "%b %Y" }}</p>
+      </a>
+    </li>
+  {% endfor %}
+  </ul>
+</div>

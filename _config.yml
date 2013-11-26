@@ -1,0 +1,11 @@
+name: Tom DeHart
+markdown: redcarpet
+pygments: true
+permalink: /:categories/:title/
+navigation:
+ - text: blog
+   url: /blog/
+ - text: projects
+   url: /projects/
+ - text: about
+   url: /about/
