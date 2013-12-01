@@ -1,0 +1,18 @@
+---
+layout: project
+title:  "Cmail"
+date:   2012-05-10 08:20:25
+categories: projects
+icon: fa-envelope
+excerpt: Collaborative privacy in email – a research project
+---
+<p align="center">
+  <a href="/images/cmail.png">
+    <img alt="Cmail" src="/images/cmail.png" class="project-img"/> 
+    <span class="caption">Cmail Inbox</span>
+  </a>
+</p>
+
+Cmail was the first Ruby on Rails app I built it was used for my [master's research](http://ieeexplore.ieee.org/xpl/login.jsp?tp=&arnumber=6113247&url=http%3A%2F%2Fieeexplore.ieee.org%2Fxpls%2Fabs_all.jsp%3Farnumber%3D6113247). Cmail is a 'fake' Gmail clone (in that we didn't use real email protocols) that allows users to send messages to each other in an email-like format. The design of the site closely reflected Gmail's design at the time but it was extended with the ability to annotate emails with 'comunity tags'. These tags would act as a collaborative privacy tool for a group of people and would give users the ability to restict the flow of outgoing emails. The site is not hosted anywhere publicly but the source code is linked below.
+
+<a href="https://github.com/tdehart/cmail" target="_blank">GitHub Link</a>

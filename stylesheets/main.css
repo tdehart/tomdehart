@@ -1,4 +1,4 @@
-html: {
+html:  {
   color: #000;
 }
 
@@ -9,7 +9,7 @@ body {
   font-weight: 300;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,h2,h3,h4,h5,h6 {
   font-family: "Open Sans",sans-serif;
   font-weight: 400;
   color: #3a3a3a;
@@ -19,11 +19,12 @@ h1, h2, h3, h4, h5, h6 {
 
 a {
   text-decoration: none;
-  -webkit-transition: color 0.15s cubic-bezier(0.455,  0.03,  0.515,  0.955);
-  -moz-transition: color 0.15s cubic-bezier(0.455,  0.03,  0.515,  0.955);
-  -ms-transition: color 0.15s cubic-bezier(0.455,  0.03,  0.515,  0.955);
-  -o-transition: color 0.15s cubic-bezier(0.455,  0.03,  0.515,  0.955);
-  transition: color 0.15s cubic-bezier(0.455,  0.03,  0.515,  0.955);
+
+  -webkit-transition: color 0.15s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+  -moz-transition: color 0.15s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+  -o-transition: color 0.15s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+  -ms-transition: color 0.15s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+  transition: color 0.15s cubic-bezier(0.455, 0.03, 0.515, 0.955);
 }
 
 a:hover {
@@ -100,9 +101,11 @@ header.page-header {
 
 a.blog-item-link {
   display: block;
+
   -webkit-transition: all 0.2s ease-out;
   -moz-transition: all 0.2s ease-out;
   -o-transition: all 0.2s ease-out;
+  -ms-transition: all 0.2s ease-out;
   transition: all 0.2s ease-out;
   padding: 32px 8px;
 }
@@ -112,11 +115,11 @@ a.blog-item-link:hover {
   color: #333;
 }
 
-.blog-post a, .about-body a {
+.blog-post a,.about-body a {
   color: #FF4B32;
 }
 
-.blog-post a:hover, .about-body a:hover {
+.blog-post a:hover,.about-body a:hover {
   color: #2a2a2a;
 }
 
@@ -165,17 +168,17 @@ header.blog-post-header {
   margin-right: 20px;
 }
 
- @media only screen and (max-width: 959px) {
-  .blog-item h2, .about-header {
+@media only screen and (max-width: 959px) {
+  .blog-item h2,.about-header {
     font-size: 32px;
   }
 
-  .blog-item p, .about-body {
+  .blog-item p,.about-body {
     font-size: 16px;
   }
-  
+
   h1.blog-post-title {
-      font-size: 32px;
+    font-size: 32px;
   }
 
   .blog-post-date {
@@ -184,7 +187,8 @@ header.blog-post-header {
 
   .blog-post-body {
     font-size: 16px;
-  }
+}
+
 }
 
 @media only screen and (max-width: 479px) {
@@ -193,11 +197,11 @@ header.blog-post-header {
   }
 
   .blog-item h2 {
-    font-size: 24px; 
+    font-size: 24px;
   }
 
   .blog-item p {
     font-size: 14px;
-  }
-}
+  } 
 
+}
