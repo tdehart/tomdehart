@@ -168,6 +168,19 @@ header.blog-post-header {
   margin-right: 20px;
 }
 
+.center-block {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.youtube-vid {
+  width: 853px;
+  height: 480px;
+}
+
 @media only screen and (max-width: 959px) {
   .blog-item h2,.about-header {
     font-size: 32px;
@@ -187,7 +200,12 @@ header.blog-post-header {
 
   .blog-post-body {
     font-size: 16px;
-}
+  }
+
+  .youtube-vid {
+    width: 560px;
+    height: 315px;
+  }
 
 }
 
@@ -202,6 +220,11 @@ header.blog-post-header {
 
   .blog-item p {
     font-size: 14px;
-  } 
+  }
+
+  .youtube-vid {
+    width: 560px;
+    height: 360px;
+  }
 
 }
