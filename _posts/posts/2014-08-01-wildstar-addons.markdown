@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Wildstar Addons"
-date:   2014-06-28 09:14:15
+date:   2014-08-01 09:14:15
 categories: blog
 excerpt: A short web development departure
 ---
